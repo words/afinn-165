@@ -1,0 +1,23 @@
+language: node_js
+sudo: false
+node_js:
+- '4.0'
+- '7.0'
+after_script: bash <(curl -s https://codecov.io/bash)
+deploy:
+  - provider: npm
+    email: tituswormer@gmail.com
+    api_key:
+      secure: E3f4A/+AX8aSbc5EimVVukiMoF6+X2XWFul01hS75eHKXkxTAAEE+RkTWNDAq+skaIz5Oj0Yexn2d1C4L2Mj2nUyweRz/FZEAlztfoJBACue+vM37chYsLptF8XrFZsGthyie2O4woOfUx41IXnSYgPqEvQUmBmGTde6fw0xlJ0=
+    on:
+      tags: true
+      node: '4.0'
+  - provider: releases
+    api_key:
+      secure: G5AY/NN+2dlhyjdnRlshHJH1/yjfASrLK25hUMae2z394uAdFNhiLzBc6TRGGEda/Nm7wNJWVhRmB5wlPVgoNAKAIGon7tHCH6daQBmr5wPUSRntuk1X351cnPIesXoSBLBXxin2EcNZjudDXKoDnxbGeotbhQftMlUdFdokyNc=
+    file:
+      - "afinn-165.js"
+      - "afinn-165.min.js"
+    on:
+      tags: true
+      node: '7.0'

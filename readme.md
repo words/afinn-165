@@ -1,0 +1,74 @@
+# afinn-165 [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+
+Easy access to [afinn-165][afinn165].
+AFINN-165 contains 3382 entries.  That’s 905 more than [afinn-111][afinn111].
+
+## Installation
+
+[npm][npm-install]:
+
+```bash
+npm install afinn-165
+```
+
+## Usage
+
+```js
+var afinn = require('afinn-165');
+
+afinn.xoxo; //=> 3
+afinn.bankruptcy; //=> -3
+```
+
+## API
+
+### `afinn165`
+
+**afinn-165** returns entries to valence ratings (`Object.<string, number>`).
+
+> Note!  Be careful when accessing unknown properties on the
+> **afinn165** object, words such as “constructor” or “toString”
+> might occur.  It’s recommended to use a `hasOwnProperty` check
+> beforehand.
+
+## Musings
+
+In total, 905 entries were added and two were changed.  Compared to
+[AFINN-111][afinn111], the following changed:
+
+*   Many new words.
+*   `damn` is now rated as `-2` (was `-4`);
+*   `exasperated`, `futile`, `irresponsible` are now `-2` (were 2);
+*   New entries with spaces: `damn cute`, `damn good`, `kind of`,
+    `fucking awesome`, `fucking beautiful`, `fucking cute`,
+    `fucking fantastic`, `fucking good`, `fucking great`, `fucking hot`,
+    `fucking love`, `fucking loves`, `fucking perfect`;
+*   New entries with hyphens: `environment-friendly`, `game-changing`,
+    `ill-fated`, `loving-kindness`, `non-approved`, `post-traumatic`.
+    `self-abuse`, `self-contradictory`, `side-effect`, `side-effects`,
+    `violence-related`, `well-being`, `well-championed`, `well-developed`,
+    `well-established`, `well-focused`, `well-groomed`, `well-proportioned`.
+
+## License
+
+[MIT][license] © [Titus Wormer][author]
+
+<!-- Definitions -->
+
+[travis-badge]: https://img.shields.io/travis/wooorm/afinn-165.svg
+
+[travis]: https://travis-ci.org/wooorm/afinn-165
+
+[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/afinn-165.svg
+
+[codecov]: https://codecov.io/github/wooorm/afinn-165
+
+[npm-install]: https://docs.npmjs.com/cli/install
+
+[license]: LICENSE
+
+[author]: http://wooorm.com
+
+[afinn165]: http://stackoverflow.com/questions/32750682/32845659#32845659
+
+[afinn111]: https://github.com/wooorm/afinn-111
