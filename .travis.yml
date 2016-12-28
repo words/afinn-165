@@ -1,5 +1,4 @@
 language: node_js
-sudo: false
 node_js:
 - '4.0'
 - '7.0'
@@ -8,13 +7,13 @@ deploy:
   - provider: npm
     email: tituswormer@gmail.com
     api_key:
-      secure: E3f4A/+AX8aSbc5EimVVukiMoF6+X2XWFul01hS75eHKXkxTAAEE+RkTWNDAq+skaIz5Oj0Yexn2d1C4L2Mj2nUyweRz/FZEAlztfoJBACue+vM37chYsLptF8XrFZsGthyie2O4woOfUx41IXnSYgPqEvQUmBmGTde6fw0xlJ0=
+      secure: aC08dNFU+tVB16rfFLZ7Eg3Z+sZxDkf5cpSLyIBnSEBDZqA3JtDKJiO6YqmYsna5uvgqfKW+s+Dv81gs2rbnHbgsmAy6eQu0AWYk45b1Dx0LHi5qUITFnvYI13MWlrgUpEWESDehZKm9SpTwkxpJbUlwI62qJfXzV2poEPSDmIEDK5zTxCD7fRUrZhNt8XZibyY6TlH18aTCai0LDUfCw2Dx8UXfovYtbuzi3HcNtZWSG5G8X8TKxwBhfML4gL54lotv2jdfNoqcC12TJslwBQIvesXgbG42fsXZi4SweYGaOC9fcBRDte+0RMhnnjGWgAhX3Entid4vhL1T397nYKqesKpucTtkRmLCOimO77xhYX+JdRMkTUO8tFXq60km2CTyG74mVtqLaAevdOS0U0MagAiuu8yUIFNTGY6pgYxF72DSTBMWcC4BbmwXwWN+LU8xWtSD0lZ1qvPUcMAhNGJ2VhTjOrTfMv+M9V0g/Nei0LK7alIV2MYLKRxi1vnfyAqJpiPed7mDj7SSxf3j37Ohq0krJB71qIGn8siCyXRm6ZU5MtuF7DeisCT1f1xL97r14mRyau542KhkJ3CAADr/tuYDn2JgJ775aQ60BzacCgCiarps4xC4j/kUOCI82lEY0rLlzVKGZKhlWkD7IfK4GDfL4eSYtiq3ouSq2PQ=
     on:
       tags: true
       node: '4.0'
   - provider: releases
     api_key:
-      secure: G5AY/NN+2dlhyjdnRlshHJH1/yjfASrLK25hUMae2z394uAdFNhiLzBc6TRGGEda/Nm7wNJWVhRmB5wlPVgoNAKAIGon7tHCH6daQBmr5wPUSRntuk1X351cnPIesXoSBLBXxin2EcNZjudDXKoDnxbGeotbhQftMlUdFdokyNc=
+      secure: MLiBBjayq6lTc08x3Wpi7cHHTgqlFryBqOBa7TupY3JrMBK7EJLr38MqrmxzwiYausBJy+JBcR8pxgzumRz2FGKjWZVMwztTa/X2xzGbY/q4kBDLwBGxbSg6Ltqd1Y8xtiw1dktNJOE+kRX4HVOIayHsrv/rdZvHXU9QOXKY5XA8mkGrERiVwOqXUVCP6HybQlR+/EUQOaYMcHT1UVQJKngABqH5gZUoWBpII1EZ+u7+/Oa/epPmEswAgYh2qqX6DCwHUMiuNnoAILB26iWix3mMjv0lIo9DfUZ0Olec6GLmi2C3zkh/LeKNnYMBm60nuucyZM7udbxtn/YCaQzLOzxlaWh3GcJtn1Olmkk6cgrxs2p3CqdRNegJF/blTimFZq0y5l9KKxAYPfkfNcXcvCi+7NCI2dS8+NsRC38T5iNKS589OJB+7KPA2us7c45muthLLClbQpSPyueuKd2OqYvJSI1OCoMYkUFY3j+ZFcnLvf45alNVznVeolNYx+wsI+sim1ptUVXYRavvAMBSH+2M6FPCZQTsw/VecA+I0sGdqCKqOw+DK+sfcp8D7ZMGNv0iuoStohwZ/YHbUL1vAY1T2cgQZhCglhkeCJCi+8OQuIREHUBOrPfTk6o7Rzw1vN0/O+/A5zz5cfyn9DcAUUavaHsi4Hd5s4hEoHcYkgw=
     file:
       - "afinn-165.js"
       - "afinn-165.min.js"
