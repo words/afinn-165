@@ -49,6 +49,17 @@ In total, 905 entries were added and two were changed.  Compared to
     `violence-related`, `well-being`, `well-championed`, `well-developed`,
     `well-established`, `well-focused`, `well-groomed`, `well-proportioned`.
 
+## Related
+
+*   [afinn-96](https://github.com/wooorm/afinn-96)
+    — AFINN list from 2009, containing 1468 entries;
+*   [afinn-111](https://github.com/wooorm/afinn-111)
+    — AFINN list from 2011, containing 2477 entries;
+*   [emoji-emotion](https://github.com/wooorm/emoji-emotion)
+    — Like AFINN, but for emoji;
+*   [polarity](https://github.com/wooorm/polarity)
+    — Detect the polarity of text, based on `afinn-169` and `emoji-emotion`.
+
 ## License
 
 [MIT][license] © [Titus Wormer][author]
