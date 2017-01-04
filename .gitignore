@@ -1,7 +1,5 @@
 .DS_Store
 *.log
-.nyc_output/
-coverage/
 data/
 node_modules/
 afinn-165.js

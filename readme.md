@@ -1,4 +1,4 @@
-# afinn-165 [![Build Status][travis-badge]][travis] [![Coverage Status][codecov-badge]][codecov]
+# afinn-165 [![Build Status][travis-badge]][travis]
 
 Easy access to [afinn-165][afinn165].
 AFINN-165 contains 3382 entries.  That’s 905 more than [afinn-111][afinn111].
@@ -58,10 +58,6 @@ In total, 905 entries were added and two were changed.  Compared to
 [travis-badge]: https://img.shields.io/travis/wooorm/afinn-165.svg
 
 [travis]: https://travis-ci.org/wooorm/afinn-165
-
-[codecov-badge]: https://img.shields.io/codecov/c/github/wooorm/afinn-165.svg
-
-[codecov]: https://codecov.io/github/wooorm/afinn-165
 
 [npm-install]: https://docs.npmjs.com/cli/install
 
