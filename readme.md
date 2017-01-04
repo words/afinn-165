@@ -1,7 +1,7 @@
 # afinn-165 [![Build Status][travis-badge]][travis]
 
-Easy access to [afinn-165][afinn165].
-AFINN-165 contains 3382 entries.  That’s 905 more than [afinn-111][afinn111].
+Easy access to [AFINN 165][afinn165].
+AFINN 165 contains 3382 entries.  That’s 905 more than [AFINN 111][afinn111].
 
 ## Installation
 
@@ -24,17 +24,17 @@ afinn.bankruptcy; //=> -3
 
 ### `afinn165`
 
-**afinn-165** returns entries to valence ratings (`Object.<string, number>`).
+`afinn-165` returns entries to valence ratings (`Object.<string, number>`).
 
 > Note!  Be careful when accessing unknown properties on the
-> **afinn165** object, words such as “constructor” or “toString”
+> `afinn165` object, words such as “constructor” or “toString”
 > might occur.  It’s recommended to use a `hasOwnProperty` check
 > beforehand.
 
 ## Musings
 
 In total, 905 entries were added and two were changed.  Compared to
-[AFINN-111][afinn111], the following changed:
+[AFINN 111][afinn111], the following changed:
 
 *   Many new words.
 *   `damn` is now rated as `-2` (was `-4`);
