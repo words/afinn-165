@@ -37,7 +37,7 @@
     "remark-preset-wooorm": "^2.0.0",
     "tape": "^4.0.0",
     "wrap-stream": "^2.0.0",
-    "xo": "^0.17.0",
+    "xo": "^0.18.0",
     "xtend": "^4.0.1"
   },
   "scripts": {
@@ -52,6 +52,7 @@
   },
   "xo": {
     "space": true,
+    "esnext": false,
     "ignores": [
       "afinn-165.js"
     ]
