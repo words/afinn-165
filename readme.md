@@ -5,7 +5,7 @@ AFINN 165 contains 3382 entries.  That’s 905 more than [AFINN 111][afinn111].
 
 ## Installation
 
-[npm][npm-install]:
+[npm][]:
 
 ```bash
 npm install afinn-165
@@ -36,29 +36,29 @@ afinn.bankruptcy; //=> -3
 In total, 905 entries were added and two were changed.  Compared to
 [AFINN 111][afinn111], the following changed:
 
-*   Many new words.
-*   `damn` is now rated as `-2` (was `-4`);
-*   `exasperated`, `futile`, `irresponsible` are now `-2` (were 2);
+*   Many new words
+*   `damn` is now rated as `-2` (was `-4`)
+*   `exasperated`, `futile`, `irresponsible` are now `-2` (were 2)
 *   New entries with spaces: `damn cute`, `damn good`, `kind of`,
     `fucking awesome`, `fucking beautiful`, `fucking cute`,
     `fucking fantastic`, `fucking good`, `fucking great`, `fucking hot`,
-    `fucking love`, `fucking loves`, `fucking perfect`;
+    `fucking love`, `fucking loves`, `fucking perfect`
 *   New entries with hyphens: `environment-friendly`, `game-changing`,
     `ill-fated`, `loving-kindness`, `non-approved`, `post-traumatic`.
     `self-abuse`, `self-contradictory`, `side-effect`, `side-effects`,
     `violence-related`, `well-being`, `well-championed`, `well-developed`,
-    `well-established`, `well-focused`, `well-groomed`, `well-proportioned`.
+    `well-established`, `well-focused`, `well-groomed`, `well-proportioned`
 
 ## Related
 
-*   [afinn-96](https://github.com/wooorm/afinn-96)
-    — AFINN list from 2009, containing 1468 entries;
-*   [afinn-111](https://github.com/wooorm/afinn-111)
-    — AFINN list from 2011, containing 2477 entries;
-*   [emoji-emotion](https://github.com/wooorm/emoji-emotion)
-    — Like AFINN, but for emoji;
-*   [polarity](https://github.com/wooorm/polarity)
-    — Detect the polarity of text, based on `afinn-169` and `emoji-emotion`.
+*   [`afinn-96`](https://github.com/wooorm/afinn-96)
+    — AFINN list from 2009, containing 1468 entries
+*   [`afinn-111`](https://github.com/wooorm/afinn-111)
+    — AFINN list from 2011, containing 2477 entries
+*   [`emoji-emotion`](https://github.com/wooorm/emoji-emotion)
+    — Like AFINN, but for emoji
+*   [`polarity`](https://github.com/wooorm/polarity)
+    — Detect the polarity of text, based on `afinn-169` and `emoji-emotion`
 
 ## License
 
@@ -70,7 +70,7 @@ In total, 905 entries were added and two were changed.  Compared to
 
 [travis]: https://travis-ci.org/wooorm/afinn-165
 
-[npm-install]: https://docs.npmjs.com/cli/install
+[npm]: https://docs.npmjs.com/cli/install
 
 [license]: LICENSE
 
