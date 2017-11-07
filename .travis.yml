@@ -1,7 +1,7 @@
 language: node_js
 node_js:
 - '4.0'
-- '8.0'
+- '9.0'
 deploy:
   - provider: npm
     email: tituswormer@gmail.com
@@ -9,7 +9,7 @@ deploy:
       secure: aC08dNFU+tVB16rfFLZ7Eg3Z+sZxDkf5cpSLyIBnSEBDZqA3JtDKJiO6YqmYsna5uvgqfKW+s+Dv81gs2rbnHbgsmAy6eQu0AWYk45b1Dx0LHi5qUITFnvYI13MWlrgUpEWESDehZKm9SpTwkxpJbUlwI62qJfXzV2poEPSDmIEDK5zTxCD7fRUrZhNt8XZibyY6TlH18aTCai0LDUfCw2Dx8UXfovYtbuzi3HcNtZWSG5G8X8TKxwBhfML4gL54lotv2jdfNoqcC12TJslwBQIvesXgbG42fsXZi4SweYGaOC9fcBRDte+0RMhnnjGWgAhX3Entid4vhL1T397nYKqesKpucTtkRmLCOimO77xhYX+JdRMkTUO8tFXq60km2CTyG74mVtqLaAevdOS0U0MagAiuu8yUIFNTGY6pgYxF72DSTBMWcC4BbmwXwWN+LU8xWtSD0lZ1qvPUcMAhNGJ2VhTjOrTfMv+M9V0g/Nei0LK7alIV2MYLKRxi1vnfyAqJpiPed7mDj7SSxf3j37Ohq0krJB71qIGn8siCyXRm6ZU5MtuF7DeisCT1f1xL97r14mRyau542KhkJ3CAADr/tuYDn2JgJ775aQ60BzacCgCiarps4xC4j/kUOCI82lEY0rLlzVKGZKhlWkD7IfK4GDfL4eSYtiq3ouSq2PQ=
     on:
       tags: true
-      node: '4.0'
+      node: '9.0'
   - provider: releases
     skip_cleanup: true
     api_key:
@@ -19,4 +19,4 @@ deploy:
       - "afinn-165.min.js"
     on:
       tags: true
-      node: '8.0'
+      node: '9.0'
