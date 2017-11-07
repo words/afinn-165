@@ -51,13 +51,13 @@ In total, 905 entries were added and two were changed.  Compared to
 
 ## Related
 
-*   [`afinn-96`](https://github.com/wooorm/afinn-96)
+*   [`afinn-96`](https://github.com/words/afinn-96)
     — AFINN list from 2009, containing 1468 entries
-*   [`afinn-111`](https://github.com/wooorm/afinn-111)
+*   [`afinn-111`](https://github.com/words/afinn-111)
     — AFINN list from 2011, containing 2477 entries
-*   [`emoji-emotion`](https://github.com/wooorm/emoji-emotion)
+*   [`emoji-emotion`](https://github.com/words/emoji-emotion)
     — Like AFINN, but for emoji
-*   [`polarity`](https://github.com/wooorm/polarity)
+*   [`polarity`](https://github.com/words/polarity)
     — Detect the polarity of text, based on `afinn-169` and `emoji-emotion`
 
 ## License
@@ -78,4 +78,4 @@ In total, 905 entries were added and two were changed.  Compared to
 
 [afinn165]: http://stackoverflow.com/questions/32750682/32845659#32845659
 
-[afinn111]: https://github.com/wooorm/afinn-111
+[afinn111]: https://github.com/words/afinn-111
