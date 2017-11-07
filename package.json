@@ -15,8 +15,8 @@
     "text",
     "microblogs"
   ],
-  "repository": "https://github.com/wooorm/afinn-165",
-  "bugs": "https://github.com/wooorm/afinn-165/issues",
+  "repository": "words/afinn-165",
+  "bugs": "https://github.com/words/afinn-165/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
@@ -58,6 +58,8 @@
     ]
   },
   "remarkConfig": {
-    "plugins": ["preset-wooorm"]
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }

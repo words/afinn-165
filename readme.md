@@ -66,9 +66,9 @@ In total, 905 entries were added and two were changed.  Compared to
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/wooorm/afinn-165.svg
+[travis-badge]: https://img.shields.io/travis/words/afinn-165.svg
 
-[travis]: https://travis-ci.org/wooorm/afinn-165
+[travis]: https://travis-ci.org/words/afinn-165
 
 [npm]: https://docs.npmjs.com/cli/install
 
