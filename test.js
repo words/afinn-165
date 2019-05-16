@@ -2,7 +2,7 @@
 
 /* Dependencies. */
 var test = require('tape');
-var afinn = require('./');
+var afinn = require('.');
 
 /* Tests. */
 test('afinn', function (t) {
