@@ -1,22 +1,15 @@
 language: node_js
+sudo: false
 node_js:
-- '4.0'
-- '9.0'
+- lts/dubnium
+- node
 deploy:
-  - provider: npm
-    email: tituswormer@gmail.com
-    api_key:
-      secure: aC08dNFU+tVB16rfFLZ7Eg3Z+sZxDkf5cpSLyIBnSEBDZqA3JtDKJiO6YqmYsna5uvgqfKW+s+Dv81gs2rbnHbgsmAy6eQu0AWYk45b1Dx0LHi5qUITFnvYI13MWlrgUpEWESDehZKm9SpTwkxpJbUlwI62qJfXzV2poEPSDmIEDK5zTxCD7fRUrZhNt8XZibyY6TlH18aTCai0LDUfCw2Dx8UXfovYtbuzi3HcNtZWSG5G8X8TKxwBhfML4gL54lotv2jdfNoqcC12TJslwBQIvesXgbG42fsXZi4SweYGaOC9fcBRDte+0RMhnnjGWgAhX3Entid4vhL1T397nYKqesKpucTtkRmLCOimO77xhYX+JdRMkTUO8tFXq60km2CTyG74mVtqLaAevdOS0U0MagAiuu8yUIFNTGY6pgYxF72DSTBMWcC4BbmwXwWN+LU8xWtSD0lZ1qvPUcMAhNGJ2VhTjOrTfMv+M9V0g/Nei0LK7alIV2MYLKRxi1vnfyAqJpiPed7mDj7SSxf3j37Ohq0krJB71qIGn8siCyXRm6ZU5MtuF7DeisCT1f1xL97r14mRyau542KhkJ3CAADr/tuYDn2JgJ775aQ60BzacCgCiarps4xC4j/kUOCI82lEY0rLlzVKGZKhlWkD7IfK4GDfL4eSYtiq3ouSq2PQ=
-    on:
-      tags: true
-      node: '9.0'
-  - provider: releases
-    skip_cleanup: true
-    api_key:
-      secure: MLiBBjayq6lTc08x3Wpi7cHHTgqlFryBqOBa7TupY3JrMBK7EJLr38MqrmxzwiYausBJy+JBcR8pxgzumRz2FGKjWZVMwztTa/X2xzGbY/q4kBDLwBGxbSg6Ltqd1Y8xtiw1dktNJOE+kRX4HVOIayHsrv/rdZvHXU9QOXKY5XA8mkGrERiVwOqXUVCP6HybQlR+/EUQOaYMcHT1UVQJKngABqH5gZUoWBpII1EZ+u7+/Oa/epPmEswAgYh2qqX6DCwHUMiuNnoAILB26iWix3mMjv0lIo9DfUZ0Olec6GLmi2C3zkh/LeKNnYMBm60nuucyZM7udbxtn/YCaQzLOzxlaWh3GcJtn1Olmkk6cgrxs2p3CqdRNegJF/blTimFZq0y5l9KKxAYPfkfNcXcvCi+7NCI2dS8+NsRC38T5iNKS589OJB+7KPA2us7c45muthLLClbQpSPyueuKd2OqYvJSI1OCoMYkUFY3j+ZFcnLvf45alNVznVeolNYx+wsI+sim1ptUVXYRavvAMBSH+2M6FPCZQTsw/VecA+I0sGdqCKqOw+DK+sfcp8D7ZMGNv0iuoStohwZ/YHbUL1vAY1T2cgQZhCglhkeCJCi+8OQuIREHUBOrPfTk6o7Rzw1vN0/O+/A5zz5cfyn9DcAUUavaHsi4Hd5s4hEoHcYkgw=
-    file:
-      - "afinn-165.js"
-      - "afinn-165.min.js"
-    on:
-      tags: true
-      node: '9.0'
+  provider: releases
+  skip_cleanup: true
+  api_key:
+    secure: q4MSrR7XvRscDFloJfRfFiA0H3g66TD58dF3wVwtZUbK6mxD5x0c7DA/JOJu0Ph3MiFvTXytOqBh6vBi0NYozdm8VSzTrjARthDcrDY5PyaW5yZjOiOoFooCMeqHLI6BsrxulJ+//jQ8dc9IemWB+r80gdpqGDZxeLw5L4fGBgbet2AJMkuFMemQem9rrxID295Z7KxDH79i+cMzlbf3q4vdL5NMnXVRZPQybls7AFWUe6iJryWonImHfx5bOrdNMPyqe0Z3JPLaUV1kSvnqCoXn6amhVrSx8WPij++cSLwZS4kfg9r4h8MbI19Z6gaNKkGYvUgr8r1SjBQ7GqQxbK0le+7hM+gXvwioTBa7w2YN/WMMElPuckOTOuyjaJlhwDnX/a1PLYDtIDs2N2yYeDVqDZoYw8hUCeWQFeVPqYwb5LkfK2u/IYSAFiXMLmTKn8lpk+8rqD+fKTpXZs4B7tXSHqIXP5eXRX5CgRiTR4FHZUSmmE1Ag5nFVk0mw1Jiwms50JdtB/PrGtc6FVjNpCh+FeW77FeLj1E3xNggkhZQt6kzhZbFHJk836v7zQ/frT+HnnxyLh77hcDEKp3VPCveZvw962XVxqAAIOhoP4PJHGs6+eP+EqcStAh7WBjiwTwrkGfeOI4SsLhe/SSc/wbMvMTgDMDbGo1RGh1vu74=
+  file:
+    - 'afinn-165.js'
+    - 'afinn-165.min.js'
+  on:
+    tags: true
