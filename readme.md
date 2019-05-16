@@ -5,7 +5,8 @@
 [![Size][size-badge]][size]
 
 Easy access to [AFINN 165][afinn165].
-AFINN 165 contains 3382 entries.  That’s 905 more than [AFINN 111][afinn111].
+AFINN 165 contains 3382 entries.
+That’s 905 more than [AFINN 111][afinn111].
 
 ## Installation
 
@@ -30,10 +31,10 @@ afinn.bankruptcy //=> -3
 
 `afinn-165` returns entries to valence ratings (`Object.<string, number>`).
 
-> Note!  Be careful when accessing unknown properties on the
-> `afinn165` object, words such as “constructor” or “toString”
-> might occur.  It’s recommended to use a `hasOwnProperty` check
-> beforehand.
+> Note!
+> Be careful when accessing unknown properties on the `afinn165` object, words
+> such as “constructor” or “toString” might occur.
+> It’s recommended to use a `hasOwnProperty` check beforehand.
 
 ## Musings
 
