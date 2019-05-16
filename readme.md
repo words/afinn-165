@@ -72,7 +72,7 @@ In total, 905 entries were added and two were changed.  Compared to
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[license]: LICENSE
+[license]: license
 
 [author]: http://wooorm.com
 
