@@ -14,10 +14,10 @@ npm install afinn-165
 ## Usage
 
 ```js
-var afinn = require('afinn-165');
+var afinn = require('afinn-165')
 
-afinn.xoxo; //=> 3
-afinn.bankruptcy; //=> -3
+afinn.xoxo //=> 3
+afinn.bankruptcy //=> -3
 ```
 
 ## API
