@@ -1,4 +1,8 @@
-# afinn-165 [![Build Status][travis-badge]][travis]
+# afinn-165
+
+[![Build][build-badge]][build]
+[![Downloads][downloads-badge]][downloads]
+[![Size][size-badge]][size]
 
 Easy access to [AFINN 165][afinn165].
 AFINN 165 contains 3382 entries.  That’s 905 more than [AFINN 111][afinn111].
@@ -66,9 +70,17 @@ In total, 905 entries were added and two were changed.  Compared to
 
 <!-- Definitions -->
 
-[travis-badge]: https://img.shields.io/travis/words/afinn-165.svg
+[build-badge]: https://img.shields.io/travis/words/afinn-165.svg
 
-[travis]: https://travis-ci.org/words/afinn-165
+[build]: https://travis-ci.org/words/afinn-165
+
+[downloads-badge]: https://img.shields.io/npm/dm/afinn-165.svg
+
+[downloads]: https://www.npmjs.com/package/afinn-165
+
+[size-badge]: https://img.shields.io/bundlephobia/minzip/afinn-165.svg
+
+[size]: https://bundlephobia.com/result?p=afinn-165
 
 [npm]: https://docs.npmjs.com/cli/install
 
