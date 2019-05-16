@@ -74,8 +74,8 @@ In total, 905 entries were added and two were changed.  Compared to
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
-[afinn165]: http://stackoverflow.com/questions/32750682/32845659#32845659
+[afinn165]: https://stackoverflow.com/questions/32750682/32845659#32845659
 
 [afinn111]: https://github.com/words/afinn-111
