@@ -17,6 +17,10 @@
   ],
   "repository": "words/afinn-165",
   "bugs": "https://github.com/words/afinn-165/issues",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/wooorm"
+  },
   "author": "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (https://wooorm.com)"
