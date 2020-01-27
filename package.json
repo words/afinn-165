@@ -1,6 +1,6 @@
 {
   "name": "afinn-165",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "AFINN 165 (list of English words rated for valence) in JSON",
   "license": "MIT",
   "keywords": [
