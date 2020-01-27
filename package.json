@@ -31,18 +31,18 @@
   ],
   "dependencies": {},
   "devDependencies": {
-    "bail": "^1.0.1",
+    "bail": "^1.0.0",
     "browserify": "^16.0.0",
     "csv-streamify": "^4.0.0",
     "join-stream": "0.0.0",
-    "prettier": "^1.17.1",
+    "prettier": "^1.0.0",
     "readable-stream": "^3.0.0",
-    "remark-cli": "^6.0.0",
-    "remark-preset-wooorm": "^5.0.0",
+    "remark-cli": "^7.0.0",
+    "remark-preset-wooorm": "^6.0.0",
     "tape": "^4.0.0",
-    "tinyify": "^2.5.0",
+    "tinyify": "^2.0.0",
     "wrap-stream": "^2.0.0",
-    "xo": "^0.24.0"
+    "xo": "^0.25.0"
   },
   "scripts": {
     "generate": "node build",
