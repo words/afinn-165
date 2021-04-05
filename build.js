@@ -1,10 +1,8 @@
-'use strict'
-
-var fs = require('fs')
-var https = require('https')
-var dsv = require('d3-dsv')
-var concat = require('concat-stream')
-var bail = require('bail')
+import fs from 'fs'
+import https from 'https'
+import dsv from 'd3-dsv'
+import concat from 'concat-stream'
+import {bail} from 'bail'
 
 var endpoint =
   'https://api.github.com/repos/fnielsen/afinn/contents/afinn/data/AFINN-en-165.txt'
@@ -28,5 +26,9 @@ function onconcat(buf) {
     data[rows[index].key] = Number.parseInt(rows[index].value, 10)
   }
 
-  fs.writeFile('index.json', JSON.stringify(data, null, 2) + '\n', bail)
+  fs.writeFile(
+    'index.js',
+    'export var afinn165 = ' + JSON.stringify(data, null, 2) + '\n',
+    bail
+  )
 }

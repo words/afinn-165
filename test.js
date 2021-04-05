@@ -1,13 +1,11 @@
-'use strict'
-
-var test = require('tape')
-var afinn = require('.')
+import test from 'tape'
+import {afinn165} from './index.js'
 
 test('afinn', function (t) {
-  t.equal(afinn.positive, 2)
-  t.equal(afinn['self-deluded'], -2)
-  t.equal(afinn.damn, -2)
-  t.equal(afinn.futile, -2)
+  t.equal(afinn165.positive, 2)
+  t.equal(afinn165['self-deluded'], -2)
+  t.equal(afinn165.damn, -2)
+  t.equal(afinn165.futile, -2)
 
   t.end()
 })

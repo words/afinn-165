@@ -1,7 +1,5 @@
 .DS_Store
 *.log
-data/
+coverage/
 node_modules/
-afinn-165.js
-afinn-165.min.js
 yarn.lock

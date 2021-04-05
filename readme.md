@@ -11,6 +11,9 @@ That’s 905 more than [AFINN 111][afinn111].
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -20,13 +23,16 @@ npm install afinn-165
 ## Use
 
 ```js
-var afinn = require('afinn-165')
+import {afinn165} from 'afinn-165'
 
-afinn.xoxo //=> 3
-afinn.bankruptcy //=> -3
+afinn165.xoxo //=> 3
+afinn165.bankruptcy //=> -3
 ```
 
 ## API
+
+This package exports the following identifiers: `afinn165`.
+There is no default export.
 
 ### `afinn165`
 
