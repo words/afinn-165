@@ -32,15 +32,14 @@
   "devDependencies": {
     "bail": "^1.0.0",
     "browserify": "^17.0.0",
-    "csv-streamify": "^4.0.0",
-    "join-stream": "0.0.0",
+    "concat-stream": "^2.0.0",
+    "d3-dsv": "^2.0.0",
     "prettier": "^2.0.0",
     "readable-stream": "^3.0.0",
     "remark-cli": "^9.0.0",
     "remark-preset-wooorm": "^8.0.0",
     "tape": "^5.0.0",
     "tinyify": "^3.0.0",
-    "wrap-stream": "^2.0.0",
     "xo": "^0.38.0"
   },
   "scripts": {
