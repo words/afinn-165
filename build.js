@@ -13,10 +13,16 @@ https.get(
   onresponse
 )
 
+/**
+ * @param {import('http').IncomingMessage} response
+ */
 function onresponse(response) {
   response.pipe(concat(onconcat))
 }
 
+/**
+ * @param {Buffer} buf
+ */
 function onconcat(buf) {
   var data = {}
   var rows = dsv.tsvParse('key\tvalue\n' + String(buf))
