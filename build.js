@@ -22,8 +22,8 @@ https.get(
   onresponse
 )
 
-function onresponse(res) {
-  res
+function onresponse(response) {
+  response
     .resume()
     .on('error', bail)
     .pipe(csv({delimiter: '\t', objectMode: true}))

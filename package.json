@@ -29,24 +29,23 @@
   "files": [
     "index.json"
   ],
-  "dependencies": {},
   "devDependencies": {
     "bail": "^1.0.0",
-    "browserify": "^16.0.0",
+    "browserify": "^17.0.0",
     "csv-streamify": "^4.0.0",
     "join-stream": "0.0.0",
-    "prettier": "^1.0.0",
+    "prettier": "^2.0.0",
     "readable-stream": "^3.0.0",
-    "remark-cli": "^7.0.0",
-    "remark-preset-wooorm": "^6.0.0",
-    "tape": "^4.0.0",
-    "tinyify": "^2.0.0",
+    "remark-cli": "^9.0.0",
+    "remark-preset-wooorm": "^8.0.0",
+    "tape": "^5.0.0",
+    "tinyify": "^3.0.0",
     "wrap-stream": "^2.0.0",
-    "xo": "^0.25.0"
+    "xo": "^0.38.0"
   },
   "scripts": {
     "generate": "node build",
-    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "build-bundle": "browserify index.json -s afinn165 -o afinn-165.js",
     "build-mangle": "browserify index.json -s afinn165 -p tinyify -o afinn-165.min.js",
     "build": "npm run build-bundle && npm run build-mangle",
