@@ -1,6 +1,7 @@
 # afinn-165
 
 [![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
@@ -71,9 +72,13 @@ Compared to [AFINN 111][afinn111], the following changed:
 
 <!-- Definitions -->
 
-[build-badge]: https://img.shields.io/travis/words/afinn-165.svg
+[build-badge]: https://github.com/words/afinn-165/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/words/afinn-165
+[build]: https://github.com/words/afinn-165/actions
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/words/afinn-165.svg
+
+[coverage]: https://codecov.io/github/words/afinn-165
 
 [downloads-badge]: https://img.shields.io/npm/dm/afinn-165.svg
 
