@@ -1,5 +1,5 @@
 /** @type {Record<string, number>} */
-export var afinn165 = {
+export const afinn165 = {
   abandon: -2,
   abandoned: -2,
   abandons: -2,
