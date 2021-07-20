@@ -34,7 +34,11 @@ function onconcat(buf) {
 
   fs.writeFile(
     'index.js',
-    'export var afinn165 = ' + JSON.stringify(data, null, 2) + '\n',
+    [
+      '/** @type {Record<string, number>} */',
+      'export var afinn165 = ' + JSON.stringify(data, null, 2),
+      ''
+    ].join('\n'),
     bail
   )
 }

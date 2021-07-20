@@ -1,3 +1,4 @@
+/** @type {Record<string, number>} */
 export var afinn165 = {
   abandon: -2,
   abandoned: -2,
