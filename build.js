@@ -24,12 +24,16 @@ function onresponse(response) {
  * @param {Buffer} buf
  */
 function onconcat(buf) {
+  /** @type {Record<string, number>} */
   var data = {}
   var rows = tsvParse('key\tvalue\n' + String(buf))
   var index = -1
 
   while (++index < rows.length) {
-    data[rows[index].key] = Number.parseInt(rows[index].value, 10)
+    const {key, value} = rows[index]
+    if (!key) throw new Error('Expected key in `' + rows[index] + '`')
+    if (!value) throw new Error('Expected value in `' + rows[index] + '`')
+    data[key] = Number.parseInt(value, 10)
   }
 
   fs.writeFile(
