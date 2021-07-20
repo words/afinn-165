@@ -1,6 +1,6 @@
 import fs from 'fs'
 import https from 'https'
-import dsv from 'd3-dsv'
+import {tsvParse} from 'd3-dsv'
 import concat from 'concat-stream'
 import {bail} from 'bail'
 
@@ -25,7 +25,7 @@ function onresponse(response) {
  */
 function onconcat(buf) {
   var data = {}
-  var rows = dsv.tsvParse('key\tvalue\n' + String(buf))
+  var rows = tsvParse('key\tvalue\n' + String(buf))
   var index = -1
 
   while (++index < rows.length) {
