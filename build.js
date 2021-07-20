@@ -4,7 +4,7 @@ import {tsvParse} from 'd3-dsv'
 import concat from 'concat-stream'
 import {bail} from 'bail'
 
-var endpoint =
+const endpoint =
   'https://api.github.com/repos/fnielsen/afinn/contents/afinn/data/AFINN-en-165.txt'
 
 https.get(
@@ -25,9 +25,9 @@ function onresponse(response) {
  */
 function onconcat(buf) {
   /** @type {Record<string, number>} */
-  var data = {}
-  var rows = tsvParse('key\tvalue\n' + String(buf))
-  var index = -1
+  const data = {}
+  const rows = tsvParse('key\tvalue\n' + String(buf))
+  let index = -1
 
   while (++index < rows.length) {
     const {key, value} = rows[index]
@@ -40,7 +40,7 @@ function onconcat(buf) {
     'index.js',
     [
       '/** @type {Record<string, number>} */',
-      'export var afinn165 = ' + JSON.stringify(data, null, 2),
+      'export const afinn165 = ' + JSON.stringify(data, null, 2),
       ''
     ].join('\n'),
     bail
