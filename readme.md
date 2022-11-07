@@ -6,18 +6,54 @@
 [![Size][size-badge]][size]
 
 [AFINN 165][afinn165].
-AFINN 165 contains 3382 entries.
-That’s 905 more than [AFINN 111][afinn111].
+
+## Contents
+
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
+*   [Install](#install)
+*   [Use](#use)
+*   [API](#api)
+    *   [`afinn165`](#afinn165)
+*   [Musings](#musings)
+*   [Types](#types)
+*   [Compatibility](#compatibility)
+*   [Related](#related)
+*   [Contributing](#contributing)
+*   [Security](#security)
+*   [License](#license)
+
+## What is this?
+
+This package exposes a map of words rated for [valence][valence-wiki]
+(“goodness” vs “badness”).
+
+## When should I use this?
+
+This package can be used for sentiment analysis of words.
+You can use [`emoji-emotion`][emoji-emotion] for emoji.
 
 ## Install
 
-This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
-instead of `require`d.
-
-[npm][]:
+This package is [ESM only][esm].
+In Node.js (version 14.14+, 16.0+), install with [npm][]:
 
 ```sh
 npm install afinn-165
+```
+
+In Deno with [`esm.sh`][esmsh]:
+
+```js
+import {afinn165} from 'https://esm.sh/afinn-165@2'
+```
+
+In browsers with [`esm.sh`][esmsh]:
+
+```html
+<script type="module">
+  import {afinn165} from 'https://esm.sh/afinn-165@2?bundle'
+</script>
 ```
 
 ## Use
@@ -31,35 +67,46 @@ afinn165.bankruptcy //=> -3
 
 ## API
 
-This package exports the following identifiers: `afinn165`.
+This package exports the identifier `afinn165`.
 There is no default export.
 
 ### `afinn165`
 
-`afinn-165` returns entries to valence ratings (`Object.<string, number>`).
+Map of words to valence (`Record<string, number>`).
 
-> Note!
-> Be careful when accessing unknown properties on the `afinn165` object, words
-> such as “constructor” or “toString” might occur.
+> 👉 **Note**: be careful when accessing unknown properties on the
+> `afinn165` object, words such as “constructor” or “toString” might occur.
 > It’s recommended to use a `hasOwnProperty` check beforehand.
 
 ## Musings
 
-In total, 905 entries were added and two were changed.
+AFINN 165 contains 3382 entries.
+905 entries were added and two were changed.
 Compared to [AFINN 111][afinn111], the following changed:
 
-*   Many new words
+*   many new words
 *   `damn` is now rated as `-2` (was `-4`)
 *   `exasperated`, `futile`, `irresponsible` are now `-2` (were 2)
-*   New entries with spaces: `damn cute`, `damn good`, `kind of`, `fucking
-    awesome`, `fucking beautiful`, `fucking cute`, `fucking fantastic`, `fucking
-    good`, `fucking great`, `fucking hot`, `fucking love`, `fucking loves`,
-    `fucking perfect`
-*   New entries with hyphens: `environment-friendly`, `game-changing`,
+*   new entries with spaces: `damn cute`, `damn good`, `kind of`,
+    `fucking awesome`, `fucking beautiful`, `fucking cute`,
+    `fucking fantastic`, `fucking good`, `fucking great`, `fucking hot`,
+    `fucking love`, `fucking loves`, `fucking perfect`
+*   new entries with hyphens: `environment-friendly`, `game-changing`,
     `ill-fated`, `loving-kindness`, `non-approved`, `post-traumatic`,
     `self-abuse`, `self-contradictory`, `side-effect`, `side-effects`,
     `violence-related`, `well-being`, `well-championed`, `well-developed`,
     `well-established`, `well-focused`, `well-groomed`, `well-proportioned`
+
+## Types
+
+This package is fully typed with [TypeScript][].
+It exports no additional types.
+
+## Compatibility
+
+This package is at least compatible with all maintained versions of Node.js.
+As of now, that is Node.js 14.14+ and 16.0+.
+It also works in Deno and modern browsers.
 
 ## Related
 
@@ -68,9 +115,18 @@ Compared to [AFINN 111][afinn111], the following changed:
 *   [`afinn-111`](https://github.com/words/afinn-111)
     — AFINN list from 2011 with 2477 entries
 *   [`emoji-emotion`](https://github.com/words/emoji-emotion)
-    — Like AFINN but for emoji
+    — like AFINN but for emoji
 *   [`polarity`](https://github.com/words/polarity)
-    — Detect the polarity of text, based on `afinn-169` and `emoji-emotion`
+    — detect the polarity of text, based on `afinn-169` and `emoji-emotion`
+
+## Contributing
+
+Yes please!
+See [How to Contribute to Open Source][contribute].
+
+## Security
+
+This package is safe.
 
 ## License
 
@@ -96,6 +152,14 @@ Compared to [AFINN 111][afinn111], the following changed:
 
 [npm]: https://docs.npmjs.com/cli/install
 
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
+[esmsh]: https://esm.sh
+
+[typescript]: https://www.typescriptlang.org
+
+[contribute]: https://opensource.guide/how-to-contribute/
+
 [license]: license
 
 [author]: https://wooorm.com
@@ -103,3 +167,7 @@ Compared to [AFINN 111][afinn111], the following changed:
 [afinn165]: https://stackoverflow.com/questions/32750682/32845659#32845659
 
 [afinn111]: https://github.com/words/afinn-111
+
+[emoji-emotion]: https://github.com/words/emoji-emotion
+
+[valence-wiki]: https://en.wikipedia.org/wiki/Valence_\(psychology\)
