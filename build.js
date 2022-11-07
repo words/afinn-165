@@ -24,7 +24,7 @@ while (++index < rows.length) {
 await fs.writeFile(
   'index.js',
   [
-    '/** @type {Record<string, number>} */',
+    '/**\n * AFINN 165.\n *\n * @type {Record<string, number>}\n */',
     'export const afinn165 = ' + JSON.stringify(data, null, 2),
     ''
   ].join('\n')

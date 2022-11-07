@@ -1,4 +1,8 @@
-/** @type {Record<string, number>} */
+/**
+ * AFINN 165.
+ *
+ * @type {Record<string, number>}
+ */
 export const afinn165 = {
   abandon: -2,
   abandoned: -2,
